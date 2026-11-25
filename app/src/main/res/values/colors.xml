@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blu">#2340C9</color>
+    <color name="blu_chiaro">#E7EBFF</color>
+    <color name="rosso">#D7263D</color>
+    <color name="verde">#1D7A45</color>
+    <color name="carta">#F6F4EF</color>
+    <color name="inchiostro">#141A2E</color>
+    <color name="grigio">#5D6377</color>
+    <color name="bianco">#FFFFFF</color>
+</resources>

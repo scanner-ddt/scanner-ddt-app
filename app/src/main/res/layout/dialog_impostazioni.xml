@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView style="@style/Etichetta" android:text="Indirizzo dello script (finisce con /exec)" />
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="https://script.google.com/macros/s/…/exec"
+            android:inputType="textUri"
+            android:textSize="14sp" />
+
+        <TextView style="@style/Etichetta" android:text="PIN" />
+        <EditText
+            android:id="@+id/etPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword" />
+
+        <TextView style="@style/Etichetta" android:text="Sigla (2 lettere)" />
+        <EditText
+            android:id="@+id/etSigla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:maxLength="2" />
+
+        <TextView style="@style/Etichetta" android:text="Destinatari (uno per riga)" />
+        <EditText
+            android:id="@+id/etDest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:minLines="2" />
+
+        <TextView style="@style/Etichetta" android:text="Orario di invio automatico (HH:MM)" />
+        <EditText
+            android:id="@+id/etOra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="12:00"
+            android:inputType="time"
+            android:maxLength="5" />
+    </LinearLayout>
+</ScrollView>
